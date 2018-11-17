@@ -6,7 +6,7 @@
         <div class="content-container">
             <section>
                 <h4 class="title">
-                    无火的余灰
+                甜甜的博客系统
                 </h4>
             </section>
             <a class="log-out" @click="logOut">

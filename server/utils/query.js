@@ -9,11 +9,11 @@ import path from 'path'
 import {db, dbName} from '../config/'
 
 let pool
-const sqlSource = fs.readFileSync(path.resolve(__dirname, '..', './sql/ashen_db.sql'), 'utf-8')
+const sqlSource = fs.readFileSync(path.resolve(__dirname, '../sql/tt_blog.sql'), 'utf-8')
 const init = mysql.createConnection(db)
 
 init.connect()
-init.query('CREATE DATABASE ashen_db', err => {
+init.query('CREATE DATABASE tt_blog', err => {
     Object.assign(db, dbName)
     pool = mysql.createPool(db)
     if (err) {

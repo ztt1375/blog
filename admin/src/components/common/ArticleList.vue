@@ -1,6 +1,6 @@
 <template>
     <ul class="list">
-        <li class="article" :class="{active: activeIndex === index, published: isPublished === 1}" v-for="{title, createTime, isPublished, isChosen},index in articleList" @click="select(index)" v-if="isChosen">
+        <li class="article" :class="{active: activeIndex === index, published: isPublished === 1}" v-for="({title, createTime, isPublished, isChosen},index) in articleList" :key="index" @click="select(index)" v-if="isChosen">
             <header>{{ title }}</header>
             <p>{{ createTime }}</p>
         </li>

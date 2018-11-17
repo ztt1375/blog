@@ -1,7 +1,7 @@
 <template>
     <div class="login-container">
         <header class="login-head">
-            <span>无火的余灰</span>
+            <span>甜甜的博客系统</span>
             <img class="logo" src="../assets/img/logo.png" alt="营火">
         </header>
         <section class="form">
